@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #F6F2EB;
+    --text-primary: #1F1B24;
+    --text-muted: #6B5D70;
+    --surface: rgba(255, 255, 255, 0.9);
+    --surface-muted: rgba(255, 255, 255, 0.65);
+    --accent: #E83C91;
+    --accent-strong: #C12C74;
+    --shadow-soft: 0 25px 60px rgba(26, 17, 34, 0.12);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    zoom: 1;
+    overscroll-behavior: none;
+    background-color: var(--bg-primary);
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    overscroll-behavior: none;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+  
+  * {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Smooth scroll improvements */
+  section {
+    will-change: transform;
+    transform: translateZ(0);
+  }
+  
+  /* Remove scroll jitter */
+  * {
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+}
