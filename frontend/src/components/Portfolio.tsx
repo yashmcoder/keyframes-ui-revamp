@@ -18,9 +18,9 @@ const portfolioItems = [
   },
   { 
     id: 3, 
-    title: 'Kung Fu Panda', 
+    title: 'Squid Games', 
     image: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=2070&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/your-imagekit-id/sample-video-3.mp4'
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/AMV.mp4'
   },
   { 
     id: 4, 
