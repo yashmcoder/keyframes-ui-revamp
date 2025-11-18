@@ -9,6 +9,7 @@ const portfolioItems = [
     title: 'Event Shoot', 
     image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070&auto=format&fit=crop', 
     videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/eventshoot.mp4'
+  },
   { 
     id: 2, 
     title: 'Insta Reel', 
