@@ -20,7 +20,7 @@ const portfolioItems = [
     id: 3, 
     title: 'Squid Games', 
     image: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&',  
-    videoUrl: 'https://player.cloudinary.com/embed/?cloud_name=dgsvh4ozj&public_id=AMV_nhzbmy&profile=cld-default'
+    videoUrl: 'https://res.cloudinary.com/dgsvh4ozj/video/upload/c_limit,h_800,w_1300/v1763490121/AMV_nhzbmy.jpg'
   },
   { 
     id: 4, 
