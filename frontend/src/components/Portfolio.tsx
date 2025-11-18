@@ -6,57 +6,56 @@ import SectionTitle from './SectionTitle';
 const portfolioItems = [
   { 
     id: 1, 
-    title: 'Interstellar', 
+    title: 'Event Shoot', 
     image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/hwyp9efug/Explanantory%20Reel%20-%20S10.mp4?updatedAt=1763198944803'
-  },
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/eventshoot.mp4'
   { 
     id: 2, 
-    title: 'Dune Part Two', 
+    title: 'Insta Reel', 
     image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/yashm/KFS%20Portfolio/REEL%20%20(1).mp4?updatedAt=1763203363841'
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Explanatory+reel+2.mp4'
   },
   { 
     id: 3, 
-    title: 'Squid Games', 
+    title: 'Gaming Video', 
     image: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&',  
-    videoUrl: 'https://res.cloudinary.com/dgsvh4ozj/video/upload/c_limit,h_800,w_1300/v1763490121/AMV_nhzbmy.jpg'
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Gaming+Video.mp4'
   },
   { 
     id: 4, 
-    title: 'Starboy', 
+    title: 'Explainatory Reel', 
     image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1964&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/your-imagekit-id/sample-video-4.mp4'
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Explanatory+reel.mp4'
   },
   { 
     id: 5, 
-    title: 'The Honored One', 
+    title: 'Insta Reel 2', 
     image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2059&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/your-imagekit-id/sample-video-5.mp4'
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/explanatory4.mp4'
   },
   { 
     id: 6, 
-    title: 'Challenger', 
+    title: 'App Promo', 
     image: 'https://images.unsplash.com/photo-1579566346927-c68383817a25?q=80&w=2070&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/your-imagekit-id/sample-video-6.mp4'
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/App+Promo.mp4'
   },
   { 
     id: 7, 
-    title: "I Can't Lose", 
+    title: "Explainatory Reel 2", 
     image: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=2056&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/your-imagekit-id/sample-video-7.mp4'
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/explanatory3.mp4'
   },
   { 
     id: 8, 
-    title: 'Attack On Titan', 
+    title: 'Product Ad', 
     image: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/your-imagekit-id/sample-video-8.mp4'
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Product+Ad.mp4'
   },
   { 
     id: 9, 
-    title: 'Jujutsu Kaisen', 
+    title: 'Squid Games (Not Playable)', 
     image: 'https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?q=80&w=1972&auto=format&fit=crop', 
-    videoUrl: 'https://ik.imagekit.io/your-imagekit-id/sample-video-9.mp4'
+    videoUrl: 'https://res.cloudinary.com/dgsvh4ozj/video/upload/br_800k,vc_h265/v1763490121/AMV_nhzbmy.mp4'
   },
 ];
 
