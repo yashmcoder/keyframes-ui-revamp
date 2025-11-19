@@ -5,32 +5,32 @@ import SectionTitle from './SectionTitle';
 
 const services = [
   {
-    icon: Youtube,
-    title: 'Editorial Suites',
-    description: 'Long-form YouTube and documentary edits crafted with story-first pacing, tonal polish, and platform-ready exports.',
-    features: ['Narrative structure + scripting assist', 'Custom motion passes & title kits', 'Full sound + color finishing'],
-    badge: '72h avg turnaround'
-  },
-  {
     icon: Instagram,
-    title: 'Social Systems',
-    description: 'Always-on short-form pipelines for Reels, Shorts, and TikTok with adaptive crops and hook-heavy edits.',
-    features: ['Batch delivery & versioning', 'Platform-specific hooks + CTAs', 'Auto-captioning + meme inserts'],
-    badge: 'Weekly drops'
+    title: 'High-Performance Reel Editing',
+    description: 'We create premium short-form content designed to stop scrolling, boost retention, and elevate your brand image. Every reel is crafted with luxury-grade aesthetics and performance psychology.',
+    features: ['Trend-aligned hooks & storytelling', 'Clean caption styles + motion graphics', 'Fast delivery & feedback cycles', 'Brand-consistent edits for long-term growth'],
+    badge: 'Premium Reels'
   },
   {
-    icon: PartyPopper,
-    title: 'Event Films',
-    description: 'High-energy highlight films that bottle the atmosphere of launches, retreats, and creator meetups.',
-    features: ['Hybrid multi-cam stitching', 'Music licensing + beat syncing', 'Hero cuts + teaser loops'],
-    badge: 'Live support'
+    icon: Youtube,
+    title: 'Cinematic Long-Form Production',
+    description: 'Long-form videos that feel cinematic, structured, and authoritative. Ideal for YouTube, podcasts, courses, or brand films where quality directly impacts perception.',
+    features: ['Strong narrative structure & pacing', 'Color grading, sound cleanup, polish', 'Thumbnail & title direction', 'Full packaging for YouTube or courses'],
+    badge: 'Cinematic Quality'
   },
   {
     icon: Clapperboard,
-    title: 'Brand Spots',
-    description: 'Premium commercial edits with cinematic pacing, product hero moments, and on-brand motion graphics.',
-    features: ['Concept-to-cut collaboration', 'Look-dev + LUT creation', 'Multi-language deliverables'],
-    badge: 'Full-service'
+    title: 'Professional On-Ground Shoots',
+    description: 'A dedicated production crew capturing crisp, cinematic footage tailored to your brand. Perfect for founders, influencers, and businesses who want premium visuals.',
+    features: ['Multi-angle shoot setups', 'Scripted + natural shots', 'Lighting & direction handled end-to-end', 'Complete extraction: multiple reels + long-form from one shoot'],
+    badge: 'Full Production'
+  },
+  {
+    icon: PartyPopper,
+    title: 'Content Systems & Management',
+    description: 'A streamlined backend system ensuring your content runs consistently, efficiently, and without stress. We handle planning, organizing, and publishing — you stay in flow.',
+    features: ['Weekly content planning & strategy', 'Scheduling & posting', 'Visual Systems, Titles, thumbnails', 'Asset management and workflow systems'],
+    badge: 'Complete System'
   }
 ];
 

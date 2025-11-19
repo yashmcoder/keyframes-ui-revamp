@@ -1,69 +1,100 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Play, Pause, RotateCcw } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Pause, RotateCcw, Volume2, VolumeX } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SectionTitle from './SectionTitle';
 
 const portfolioItems = [
   { 
     id: 1, 
-    title: 'Event Shoot', 
-    image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070&auto=format&fit=crop', 
-    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/eventshoot.mp4'
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/3D+Motion+Graphics.jpg', 
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/3D+Motion+Graphics+2.mp4'
   },
   { 
     id: 2, 
-    title: 'Insta Reel', 
-    image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071&auto=format&fit=crop', 
-    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Explanatory+reel+2.mp4'
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/3D+Motion+Graphics+2.jpg', 
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/3D+Motion+Graphics.mp4'
   },
   { 
     id: 3, 
-    title: 'Gaming Video', 
-    image: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&',  
-    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Gaming+Video.mp4'
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Fast+Paced+Motion+Edit.jpg',  
+    videoUrl: 'https://res.cloudinary.com/dgsvh4ozj/video/upload/br_800kk,vc_h265/v1763490121/AMV_nhzbmy.mp4'
   },
   { 
     id: 4, 
-    title: 'Explainatory Reel', 
-    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1964&auto=format&fit=crop', 
-    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Explanatory+reel.mp4'
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Conference+Shoot.jpg', 
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/eventshoot.mp4'
   },
   { 
     id: 5, 
-    title: 'Insta Reel 2', 
-    image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2059&auto=format&fit=crop', 
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Explainer+Reel.jpg',
     videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/explanatory4.mp4'
   },
   { 
     id: 6, 
-    title: 'App Promo', 
-    image: 'https://images.unsplash.com/photo-1579566346927-c68383817a25?q=80&w=2070&auto=format&fit=crop', 
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Digital+Product+Showcase.jpg', 
     videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/App+Promo.mp4'
   },
   { 
     id: 7, 
-    title: "Explainatory Reel 2", 
-    image: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=2056&auto=format&fit=crop', 
-    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/explanatory3.mp4'
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Product+Spotlight.jpg', 
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Product+Ad+2.mp4'
   },
   { 
     id: 8, 
-    title: 'Product Ad', 
-    image: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop', 
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Product+Spotlight+2.jpg', 
     videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Product+Ad.mp4'
   },
   { 
     id: 9, 
-    title: 'Squid Games (Not Playable)', 
-    image: 'https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?q=80&w=1972&auto=format&fit=crop', 
-    videoUrl: 'https://res.cloudinary.com/dgsvh4ozj/video/upload/br_800k,vc_h265/v1763490121/AMV_nhzbmy.mp4'
+    title: '', 
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Clinic+Shoot.jpg', 
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Shoot.MOV'
   },
+  {
+    id: 10,
+    title: '',
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Creator+Video.jpg',
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Talking+Head.mp4'
+  },
+  {
+    id: 11,
+    title: '',
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Typography+Visual.jpg',
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Text+Animation.mp4'
+  },
+  {
+    id: 12,
+    title: '',
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Explainer+Reel+4.jpg',
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Explanatory+reel.mp4'
+  },
+  {
+    id: 13,
+    title: '',
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Explainer+Reel+2.jpg',
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/Explanatory+reel+2.mp4'
+  },
+  {
+    id: 14,
+    title: '',
+    image: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/Kfs_thumbnails/Explainer+Reel+3.jpg',
+    videoUrl: 'https://keyframe-studios.s3.us-east-1.amazonaws.com/KFS+Portfolio/explanatory3.mp4'
+  }
 ];
 
 const Portfolio: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasEnded, setHasEnded] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const goToRelativeIndex = (offset: number) => {
@@ -100,6 +131,14 @@ const Portfolio: React.FC = () => {
     }
   };
 
+  const toggleMute = () => {
+    if (videoRef.current) {
+      const nextMuted = !isMuted;
+      videoRef.current.muted = nextMuted;
+      setIsMuted(nextMuted);
+    }
+  };
+
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.pause();
@@ -118,12 +157,12 @@ const Portfolio: React.FC = () => {
         <div className="px-4 md:px-6 lg:px-8 py-12 md:py-16 relative z-10">
           <SectionTitle 
             title="Our Work"
-            subtitle="A showcase of our finest video editing projects."
+            subtitle="A preview of the content we create for brands and creators."
           />
           
           {/* Deck-style Carousel */}
           <div className="relative max-w-6xl mx-auto mt-8 md:mt-12">
-            <div className="relative h-[65vh] flex items-center justify-center overflow-visible">
+            <div className="relative h-[55vh] sm:h-[60vh] lg:h-[65vh] flex items-center justify-center overflow-visible">
               {visibleOffsets.map((offset) => {
                 const { item } = getItemAtOffset(offset);
                 const isActive = offset === 0;
@@ -131,7 +170,7 @@ const Portfolio: React.FC = () => {
                 return (
                   <motion.div
                     key={`${item.id}-${offset}-${currentIndex}`}
-                    className="absolute w-full max-w-3xl"
+                    className="absolute w-full max-w-[90vw] sm:max-w-2xl lg:max-w-3xl"
                     animate={{
                       x: offset * 220,
                       scale: isActive ? 1 : 0.92,
@@ -142,13 +181,19 @@ const Portfolio: React.FC = () => {
                     style={{ zIndex: isActive ? 30 : 20 - Math.abs(offset) }}
                   >
                     {isActive ? (
-                      <div className="bg-white/85 backdrop-blur-2xl rounded-3xl shadow-[0_45px_110px_rgba(15,23,42,0.2)] overflow-hidden h-[65vh]" key={item.id}>
+                      <motion.div
+                        className="bg-white/85 backdrop-blur-2xl rounded-3xl shadow-[0_45px_110px_rgba(15,23,42,0.2)] overflow-hidden h-[50vh] sm:h-[60vh] lg:h-[65vh] group border border-[#d5c5b2]/70"
+                        key={item.id}
+                        animate={{ scale: isPlaying ? 1.2 : 1 }}
+                        transition={{ type: 'spring', stiffness: 215, damping: 20, mass: 0.9 }}
+                      >
                         <div className="relative w-full h-full">
                           <video
                             ref={videoRef}
                             className="w-full h-full object-contain bg-black"
                             src={item.videoUrl}
                             poster={item.image}
+                            muted={isMuted}
                             onClick={togglePlay}
                             onEnded={() => {
                               setIsPlaying(false);
@@ -181,29 +226,48 @@ const Portfolio: React.FC = () => {
                             </button>
                           )}
 
-                          <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                          <motion.div
+                            className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent"
+                            animate={{ opacity: isPlaying ? 0 : 1, y: isPlaying ? 15 : 0 }}
+                            transition={{ duration: 0.35, ease: 'easeInOut' }}
+                          >
                             <h3 className="text-white text-2xl md:text-3xl font-semibold drop-shadow-lg">{item.title}</h3>
-                            <div className="flex items-center gap-4 mt-2">
+                            <div className="flex items-center justify-end gap-4 mt-2">
                               <span className="text-white text-sm drop-shadow-lg">{currentIndex + 1} / {portfolioItems.length}</span>
                             </div>
-                          </div>
+                          </motion.div>
 
                           {isPlaying && (
-                            <button
-                              type="button"
-                              onClick={togglePlay}
-                              className="absolute top-6 right-6 p-3 bg-white/90 backdrop-blur-md rounded-full hover:bg-white transition-all z-10 shadow-[0_20px_45px_rgba(15,23,42,0.15)]"
-                            >
-                              <Pause className="w-5 h-5 text-[#1F1B24]" />
-                            </button>
+                            <div className="absolute top-6 right-6 flex items-center gap-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                              <button
+                                type="button"
+                                onClick={togglePlay}
+                                className="p-2.5 bg-white/90 backdrop-blur-md rounded-full hover:bg-white transition-all shadow-[0_20px_45px_rgba(15,23,42,0.15)] pointer-events-auto"
+                                aria-label="Pause video"
+                              >
+                                <Pause className="w-4 h-4 text-[#1F1B24]" />
+                              </button>
+                              <button
+                                type="button"
+                                onClick={toggleMute}
+                                className="p-2.5 bg-white/90 backdrop-blur-md rounded-full hover:bg-white transition-all shadow-[0_20px_45px_rgba(15,23,42,0.15)] pointer-events-auto"
+                                aria-label={isMuted ? 'Unmute video' : 'Mute video'}
+                              >
+                                {isMuted ? (
+                                  <VolumeX className="w-4 h-4 text-[#1F1B24]" />
+                                ) : (
+                                  <Volume2 className="w-4 h-4 text-[#1F1B24]" />
+                                )}
+                              </button>
+                            </div>
                           )}
                         </div>
-                      </div>
+                      </motion.div>
                     ) : (
                       <button
                         type="button"
                         onClick={() => goToRelativeIndex(offset)}
-                        className="w-full h-[55vh] rounded-3xl overflow-hidden bg-white/70 backdrop-blur shadow-[0_35px_90px_rgba(15,23,42,0.18)] relative group"
+                        className="w-full h-[40vh] sm:h-[45vh] lg:h-[55vh] rounded-3xl overflow-hidden bg-white/70 backdrop-blur shadow-[0_35px_90px_rgba(15,23,42,0.18)] relative group border border-[#d5c5b2]/60"
                       >
                         <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>

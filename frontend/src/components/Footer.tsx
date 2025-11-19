@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -34,6 +34,17 @@ const Footer: React.FC = () => {
             >
               buisness@keyframestudios.in
             </a>
+            <div className="mt-4 flex items-center justify-center gap-3">
+              <a
+                href="https://www.linkedin.com/in/yash-malav-709512141/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#1F1B24] text-white hover:bg-[#2E2234] transition-colors shadow-[0_10px_30px_rgba(31,27,36,0.2)]"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
           <div className="text-center text-sm text-[#5C4D61]">

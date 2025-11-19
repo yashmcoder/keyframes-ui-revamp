@@ -9,8 +9,8 @@ const About: React.FC = () => {
 
       <div className="px-4 md:px-6 lg:px-8 py-12 md:py-20 relative z-10 space-y-10">
         <SectionTitle
-          title="Why choose Keyframe Studios?"
-          subtitle="We design entire post-production ecosystems that scale with your voice."
+          title="Why choose us?"
+          subtitle="A complete visual ecosystem: shoots, edits, and smooth content operations under one roof."
         />
 
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 xl:gap-16 items-center">
@@ -23,10 +23,10 @@ const About: React.FC = () => {
           >
             <div className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.4em] text-[#5C4D61]">
               <span className="h-1 w-8 rounded-full bg-[#1F1B24]"></span>
-              Edit Rooms with a POV
+              About us
             </div>
             <p className="mt-5 text-lg md:text-xl text-[#1F1B24] leading-relaxed">
-              Our team blends agency-grade storytelling with creator-speed workflows. We obsess over retention beats, emotional arc, and brand equity—then deliver that polish inside collaborative, async-friendly pipelines.
+              We craft cinematic visuals and seamless content systems that keep your brand looking refined, consistent, and unmistakably premium across every platform.
             </p>
             <div className="grid sm:grid-cols-3 gap-4 mt-8">
               {[{ label: 'Avg watch-time lift', value: '+42%' }, { label: 'Projects shipped', value: '680+' }, { label: 'Client retention', value: '93%' }].map((metric) => (
@@ -46,12 +46,12 @@ const About: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
           >
             <div className="rounded-[28px] bg-white/75 backdrop-blur-2xl p-6 shadow-[0_35px_100px_rgba(15,23,42,0.15)]">
-              <p className="text-sm uppercase tracking-[0.4em] text-[#5C4D61]/70">How we work</p>
+              <p className="text-sm uppercase tracking-[0.4em] text-[#5C4D61]/70">How We Work</p>
               <ul className="mt-5 space-y-4 text-[#1F1B24]">
                 {[
-                  'Dedicated edit squads embedded into your content calendar.',
-                  'Live Figma + Notion living boards for beats, hooks, and copy.',
-                  'Motion templates + LUT libraries custom-built for your aesthetic.'
+                  'Strategize & Plan — Understand your brand, style, goals, and build a clear content roadmap.',
+                  'Create & Capture — Shoot premium footage and transform raw content into high-performance visuals.',
+                  'Deliver & Optimize — Maintain a smooth pipeline with fast delivery, revisions, and continuous improvements.'
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-base">
                     <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#1F1B24]"></span>
@@ -63,8 +63,8 @@ const About: React.FC = () => {
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { title: 'Creator-first processes', description: 'Slack / Discord native communication with daily async previews.' },
-                { title: 'Strategy in every cut', description: 'We pair editors with strategists to keep story + CTA aligned.' }
+                { title: 'Creator-first processes', description: 'Fast, direct communication with daily previews and instant feedback loops.' },
+                { title: 'Strategy in every cut', description: 'Strategists set the direction. Editors bring it to life. Every video stays aligned with your message and CTA.' }
               ].map((card) => (
                 <div key={card.title} className="rounded-3xl border border-white/0 bg-white/70 backdrop-blur-xl p-5 shadow-[0_25px_70px_rgba(67,51,76,0.12)]">
                   <h4 className="text-base font-semibold text-[#1F1B24]">{card.title}</h4>
