@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             </a>
             <div className="mt-4 flex items-center justify-center gap-3">
               <a
-                href="https://www.linkedin.com/in/yash-malav-709512141/"
+                href="https://www.linkedin.com/company/keyframestudiosin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#1F1B24] text-white hover:bg-[#2E2234] transition-colors shadow-[0_10px_30px_rgba(31,27,36,0.2)]"
